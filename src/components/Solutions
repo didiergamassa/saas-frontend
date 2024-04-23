@@ -1,5 +1,5 @@
 <template>
-  <div class="Solutions">
+  <div class="solutions">
     <h1>APEGG</h1>
     <p>Contenu de la section solutions</p>
   </div>
