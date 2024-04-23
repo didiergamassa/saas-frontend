@@ -2,7 +2,7 @@
   <div id="app">
     <nav>
       <ul class="nav-list">
-        <router-link to="/apegg" class="nav-link">APEGG</router-link>
+        <router-link to="/apegg" class="nav-link">Apegg</router-link>
         <router-link to="/solutions" class="nav-link">Solutions</router-link>
         <router-link to="/mission" class="nav-link">Mission</router-link>
         <router-link to="/engagement" class="nav-link">Engagement</router-link>
