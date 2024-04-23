@@ -35,7 +35,7 @@ nav {
   padding: 20px 20px;
   color: white;
   text-decoration: none;
-  font-size: 25px; /* Augmentation de la taille des lettres */
+  font-size: 30px; /* Augmentation de la taille des lettres */
 }
 
 .nav-link:hover {
