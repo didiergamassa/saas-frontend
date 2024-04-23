@@ -10,6 +10,7 @@
       </ul>
     </nav>
     <router-view />
+    <Onglets />
   </div>
 </template>
 
@@ -17,6 +18,16 @@
 export default {
   name: "App",
 };
+</script>
+<script>
+import Onglets from './components/Onglets.vue';
+
+export default {
+  components: {
+    Onglets,
+  },
+  // Autres options
+}
 </script>
 
 <style>
