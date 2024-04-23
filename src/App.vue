@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="app">
+    <nav>
+      <ul class="nav-list">
+        <router-link to="/apegg" class="nav-link">APEGG</router-link>
+        <router-link to="/solutions" class="nav-link">Solutions</router-link>
+        <router-link to="/mission" class="nav-link">Mission</router-link>
+        <router-link to="/engagement" class="nav-link">Engagement</router-link>
+        <router-link to="/vision" class="nav-link">Vision</router-link>
+      </ul>
+    </nav>
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+nav {
+  background-color: #0a3d62; /* Fond de couleur bleu foncé */
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between; /* Centrer les onglets horizontalement */
+  align-items: center; /* Centrer les onglets verticalement */
+  padding: 0;
+}
+
+.nav-link {
+  padding: 20px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 30px; /* Augmentation de la taille des lettres */
+}
+
+.nav-link:hover {
+  background-color: #555;
 }
 </style>

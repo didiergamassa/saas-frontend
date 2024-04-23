@@ -1,0 +1,16 @@
+<template>
+  <div class="Mission">
+    <h1>APEGG</h1>
+    <p>Contenu de la section MISSION</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Mission'
+}
+</script>
+
+<style scoped>
+/* Styles spécifiques à ce composant */
+</style>

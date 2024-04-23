@@ -1,0 +1,16 @@
+<template>
+  <div class="Solutions">
+    <h1>APEGG</h1>
+    <p>Contenu de la section solutions</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Solutions'
+}
+</script>
+
+<style scoped>
+/* Styles spécifiques à ce composant */
+</style>
