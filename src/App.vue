@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <nav>
-      <ul>
-        <li><router-link to="/apegg">APEGG</router-link></li>
-        <li><router-link to="/solutions">Solutions</router-link></li>
-        <li><router-link to="/mission">Notre Mission</router-link></li>
-        <li><router-link to="/engagement">Notre Engagement</router-link></li>
-        <li><router-link to="/vision">Notre Vision</router-link></li>
+      <ul class="nav-list">
+        <router-link to="/apegg" class="nav-link">APEGG</router-link>
+        <router-link to="/solutions" class="nav-link">Solutions</router-link>
+        <router-link to="/mission" class="nav-link">Mission</router-link>
+        <router-link to="/engagement" class="nav-link"> Engagement</router-link>
+        <router-link to="/vision" class="nav-link">Vision</router-link>
       </ul>
     </nav>
     <router-view />
@@ -21,27 +21,24 @@ export default {
 
 <style>
 nav {
-  background-color: #333;
+  background-color: #0a3d62; /* Fond de couleur bleu foncé */
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
+.nav-list {
+  display: flex;
+  justify-content: space-between; /* Centrer les onglets horizontalement */
+  align-items: center; /* Centrer les onglets verticalement */
   padding: 0;
 }
 
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  display: inline-block;
-  padding: 10px 20px;
+.nav-link {
+  padding: 20px 20px;
   color: white;
   text-decoration: none;
+  font-size: 25px; /* Augmentation de la taille des lettres */
 }
 
-nav ul li a:hover {
+.nav-link:hover {
   background-color: #555;
 }
 </style>
